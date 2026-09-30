@@ -8,9 +8,9 @@
 <p>
 <a href="https://whuak.github.io/">Wenbin Hu</a><sup></sup>,
   Huihao Jing, 
-   Haoran Li,
   Haochen Shi<sup></sup>, 
   Yuxuan Liu<sup></sup>, 
+     Haoran Li,
   Yangqiu Song</a><sup></sup>
 </p>
 
@@ -18,20 +18,20 @@
 <sup></sup>Hong Kong University of Science and Technology  
 </p>
 
+<p>
+<sup></sup>whuak@connect.ust.hk
+</p>
+
 </div>
 
 
 <p align="center">
   <a href='https://arxiv.org/abs/2609.36820'>
-  <img src='https://img.shields.io/badge/Arxiv-2505.14585-A42C25?style=flat&logo=arXiv&logoColor=A42C25'>
+  <img src='https://img.shields.io/badge/Arxiv-2609.36820-A42C25?style=flat&logo=arXiv&logoColor=A42C25'>
   </a>
   <a href='https://hkust-knowcomp.github.io/CorrGRPO/'>
   <img src='https://img.shields.io/badge/Webpage-CorrGRPO-2563EB?style=flat' alt='Project webpage'>
   </a> 
-  <a href='https://arxiv.org/abs/2505.14585.pdf'>
-  <img src='https://img.shields.io/badge/Paper-PDF-yellow?style=flat&logo=arXiv&logoColor=yellow'>
-  </a> 
-
 </p>
 
 
