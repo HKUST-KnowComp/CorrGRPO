@@ -1,0 +1,9 @@
+{
+  "benchmark_version": "v1.2.2",
+  "eval_cases": 411,
+  "eval_file": "/data/ubuntu/wenbin_work_space/GDPO/verl-main-2026-0814/agentdojo/data/verl/test.parquet",
+  "tool_config": "/data/ubuntu/wenbin_work_space/GDPO/verl-main-2026-0814/agentdojo/verl_training/tool_config.yaml",
+  "tool_count": 69,
+  "train_cases": 1584,
+  "train_file": "/data/ubuntu/wenbin_work_space/GDPO/verl-main-2026-0814/agentdojo/data/verl/train.parquet"
+}

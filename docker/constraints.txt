@@ -1,0 +1,17 @@
+# Core versions from the environment used for the successful gpu2 smoke tests.
+# The official vLLM base image supplies matching CUDA binary packages.
+torch==2.10.0
+vllm==0.19.1
+transformers==5.10.4
+ray==2.57.0
+accelerate==1.14.0
+peft==0.20.0
+tensordict==0.10.0
+torchdata==0.11.0
+datasets==5.0.1
+hydra-core==1.3.5
+pyarrow==25.0.1
+numpy==2.2.6
+pandas==3.0.5
+liger-kernel==0.8.1
+TransferQueue==0.1.8

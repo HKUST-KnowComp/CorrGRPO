@@ -1,0 +1,3 @@
+- name: agentdojo_agent
+  _target_: verl_training.agent_loop.AgentDojoAgentLoop
+

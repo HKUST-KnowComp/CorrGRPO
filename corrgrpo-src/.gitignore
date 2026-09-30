@@ -1,0 +1,15 @@
+# Runtime outputs belong in ../outputs, outside this source directory.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+*.log
+*.pid
+*.partial
+wandb/
+outputs/
+results/
+results_*/
+outcomes*/
+eval_logs/
+runs/

@@ -1,0 +1,6 @@
+# AgentDojo training
+
+From corrgrpo-src, run `bash agent_security_rl/run.sh` to train, convert weights, and evaluate.
+
+Set the model, training options, and BENCHMARK at the top of that script.
+See the [run instructions](../../../README.md).

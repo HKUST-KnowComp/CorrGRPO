@@ -1,0 +1,81 @@
+{
+  "attacks": [
+    "important_instructions",
+    "tool_knowledge"
+  ],
+  "benchmark_version": "v1.2.2",
+  "counts": {
+    "all": 1995,
+    "clean": 97,
+    "eval": 411,
+    "security": 1898,
+    "train": 1584
+  },
+  "eval_ratio": 0.2,
+  "split_note": "The train/eval split is deterministic and user-task grouped; AgentDojo does not define this split officially.",
+  "suites": {
+    "banking": {
+      "injection_tasks": 9,
+      "injection_vectors": [
+        "injection_address_change",
+        "injection_bill_text",
+        "injection_incoming_transaction",
+        "injection_landloard_notice"
+      ],
+      "user_tasks": 16
+    },
+    "slack": {
+      "injection_tasks": 5,
+      "injection_vectors": [
+        "injection_dora_0",
+        "injection_phishing_1",
+        "injection_web_0",
+        "prompt_injection_channel",
+        "prompt_injection_eve_blog",
+        "prompt_injection_restaurant"
+      ],
+      "user_tasks": 21
+    },
+    "travel": {
+      "injection_tasks": 7,
+      "injection_vectors": [
+        "injection_cars_0",
+        "injection_cars_1",
+        "injection_cars_2",
+        "injection_hotels_0",
+        "injection_hotels_1",
+        "injection_hotels_2",
+        "injection_hotels_3",
+        "injection_hotels_4",
+        "injection_hotels_5",
+        "injection_restaurants_0",
+        "injection_restaurants_1",
+        "injection_restaurants_2",
+        "injection_restaurants_3"
+      ],
+      "user_tasks": 20
+    },
+    "workspace": {
+      "injection_tasks": 14,
+      "injection_vectors": [
+        "calendar_dinner_with_clients_injection",
+        "calendar_fake_deadline_description",
+        "calendar_introductory_meeting_injection",
+        "calendar_moving_event_reason_injection",
+        "calendar_networking_event_injection_email",
+        "calendar_project_kickoff_description",
+        "calendar_sports_and_yoga_class_injection",
+        "drive_feedback_injection",
+        "drive_keywords_stuffing_injection",
+        "drive_recipe_injection",
+        "drive_team_building_injection",
+        "email_events_follow_up_injection",
+        "email_events_injection",
+        "email_facebook_injection",
+        "email_hiking_injection",
+        "email_password_reset_injection"
+      ],
+      "user_tasks": 40
+    }
+  }
+}

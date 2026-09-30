@@ -1,0 +1,24 @@
+# Prepared by package_environment.py using the tested active environment.
+# The base supplies Linux libraries and compiler tools; Python is bundled below.
+ARG BASE_IMAGE=python:3.11
+FROM ${BASE_IMAGE}
+COPY runtime/python /opt/python
+COPY runtime/venv /opt/venv
+COPY runtime/bin /usr/local/bin
+COPY project /workspace
+COPY environment.txt /opt/corrgrpo-environment.txt
+ENV PATH=/opt/venv/bin:/usr/local/bin:${PATH} \
+    VIRTUAL_ENV=/opt/venv \
+    LD_LIBRARY_PATH=/opt/python/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 \
+    PYTHONPATH=/workspace \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    HF_HOME=/workspace/.cache/huggingface \
+    VLLM_WORKER_MULTIPROC_METHOD=spawn \
+    NVIDIA_VISIBLE_DEVICES=all \
+    NVIDIA_DRIVER_CAPABILITIES=compute,utility
+ENV USER=corrgrpo LOGNAME=corrgrpo HOME=/tmp
+WORKDIR /workspace
+RUN python -c "import sys,torch,vllm; assert sys.prefix == '/opt/venv'; print(sys.version,torch.__version__,vllm.__version__)"
+ENTRYPOINT []
+CMD ["bash"]

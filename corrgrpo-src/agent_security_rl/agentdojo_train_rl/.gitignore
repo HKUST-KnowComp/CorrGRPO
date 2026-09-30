@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.bak*
+*.before-*
+
+runs/*.log
+runs/*.pid
+runs/*/
