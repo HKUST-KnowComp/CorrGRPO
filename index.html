@@ -18,6 +18,16 @@
 <p class="equal">* Equal contribution</p>
 <div class="links"><a href="https://arxiv.org/abs/2609.36820">arXiv Paper</a><a href="https://github.com/HKUST-KnowComp/CorrGRPO">Code</a><a href="#citation">BibTeX</a></div>
 </header>
+<figure class="overview-figure" aria-labelledby="overview-caption">
+<div class="overview-layout">
+<a class="overview-formulas" href="assets/overview-normalization.png" target="_blank" rel="noopener"><img src="assets/overview-normalization.png" alt="GRPO and CorrGRPO advantage equations, showing how covariance normalization becomes correlation normalization, with notation definitions."></a>
+<div class="overview-curves">
+<a href="assets/overview-accuracy.png" target="_blank" rel="noopener"><img src="assets/overview-accuracy.png" alt="Validation accuracy for GRPO and CorrGRPO during training."></a>
+<a href="assets/overview-efficiency.png" target="_blank" rel="noopener"><img src="assets/overview-efficiency.png" alt="Validation efficiency for GRPO and CorrGRPO during training."></a>
+</div>
+</div>
+<figcaption id="overview-caption"><strong>CorrGRPO overview.</strong> CorrGRPO replaces total-reward standard deviation normalization with a correlation-based denominator while retaining the centered total reward. Validation accuracy and efficiency are measured by Mean@1 for Qwen2.5-Coder-7B-Instruct on LeetCodeDataset.</figcaption>
+</figure>
 <section id="introduction">
 <h2>Introduction</h2>
 <p>Group Relative Policy Optimization (GRPO) is widely used to train reasoning language models, where it computes advantages by centering and normalizing rewards across rollouts of the same prompt. For multiple rewards, GRPO sums the reward components and normalizes the total reward by its within-group standard deviation. The corresponding variance equals the sum of all pairwise reward covariances. For a fixed centered reward, larger aggregate covariance produces smaller advantages, and vice versa, allowing update magnitudes to adapt to reward dependence. However, correlated rewards with large scales can dominate this normalization and suppress signals from smaller-scale rewards.</p>
